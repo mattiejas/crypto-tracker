@@ -1,5 +1,6 @@
 package io.github.mattiejas.crypto_tracker
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -27,6 +28,9 @@ class MainActivity : AppCompatActivity() {
     fun openAddTradeView() {
         Log.d("Main", "Open Add Trade View")
         Toast.makeText(this, "Test", Toast.LENGTH_LONG).show()
+
+        val intent = Intent(this, AddTradeActivity::class.java)
+        startActivity(intent)
     }
 
 }
