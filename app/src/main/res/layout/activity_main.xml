@@ -17,8 +17,10 @@
             android:layout_height="match_parent"
             android:elevation="4dp"
             app:contentScrim="@color/primaryDarkColor"
-            app:expandedTitleMarginBottom="90dp"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            app:collapsedTitleTextAppearance="@style/CryptoAppTheme.AppBarCollapsed.Title"
+            app:expandedTitleTextAppearance="@style/CryptoAppTheme.AppBarExpanded.Title"
+            app:expandedTitleMarginBottom="140dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -26,21 +28,21 @@
                 android:layout_gravity="bottom">
 
                 <TextView
-                    android:id="@+id/balanceBig"
+                    android:id="@+id/balance_big"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="120dp"
-                    android:layout_marginStart="30dp"
+                    android:layout_marginBottom="90dp"
+                    android:layout_marginStart="33dp"
                     android:text="0.003214 BTC"
                     android:textSize="12pt" />
 
                 <TextView
-                    android:id="@+id/balanceSmall"
+                    android:id="@+id/balance_small"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@id/balanceBig"
+                    android:layout_alignBaseline="@id/balance_big"
                     android:layout_marginStart="10dp"
-                    android:layout_toEndOf="@id/balanceBig"
+                    android:layout_toEndOf="@id/balance_big"
                     android:text="10.32 EUR"
                     android:textSize="9pt" />
             </RelativeLayout>
@@ -58,7 +60,7 @@
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:behavior_overlapTop="60dp"
+        app:behavior_overlapTop="80dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout

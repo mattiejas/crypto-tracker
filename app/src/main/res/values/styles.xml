@@ -1,21 +1,33 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="CryptoAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimary">@color/primaryDarkColor</item>
         <item name="colorPrimaryDark">@color/primaryDarkColor</item>
         <item name="colorAccent">@color/secondaryColor</item>
+
+        <item name="android:navigationBarColor">@color/primaryDarkColor</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
+    <style name="CryptoAppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+    
+    <style name="CryptoAppTheme.AppBarExpanded.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/primaryLightColor</item>
+        <item name="android:textSize">15pt</item>
+    </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="CryptoAppTheme.AppBarCollapsed.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/primaryLightColor</item>
+        <item name="android:textSize">10pt</item>
+    </style>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="CryptoAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="CryptoAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 

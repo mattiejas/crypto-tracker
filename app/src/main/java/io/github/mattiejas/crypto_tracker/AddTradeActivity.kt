@@ -8,5 +8,7 @@ class AddTradeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_trade)
+
+        supportActionBar?.title = "Add Trade"
     }
 }
