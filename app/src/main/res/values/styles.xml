@@ -16,12 +16,12 @@
     </style>
     
     <style name="CryptoAppTheme.AppBarExpanded.Title" parent="TextAppearance.AppCompat.Title">
-        <item name="android:textColor">@color/primaryLightColor</item>
+        <item name="android:textColor">#ffffff</item>
         <item name="android:textSize">15pt</item>
     </style>
 
     <style name="CryptoAppTheme.AppBarCollapsed.Title" parent="TextAppearance.AppCompat.Title">
-        <item name="android:textColor">@color/primaryLightColor</item>
+        <item name="android:textColor">#ffffff</item>
         <item name="android:textSize">10pt</item>
     </style>
 
